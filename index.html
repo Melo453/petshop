@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./imports/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img class="menu__logo" src="./public/logo.svg" alt="Logo">
+            <ul class="menu__items">
+                <li title="Categorias">
+                    <img  class="patita" src="./public/pawprint 4.png" alt="patita">
+                    <a class="responsive desplazar" href="#Pets" >Categorias</a>
+                </li>
+                <li title="Pets" >
+                    <img  class="patita" src="./public/pawprint 4.png" alt="patita">
+                    <a  class="responsive desplazar" href="#Categorias"> 
+                        Pets</a>
+                </li>
+                <li title="Nosotros">
+                    <img  class="patita" src="./public/pawprint 4.png" alt="patita">
+                    <a class="responsive desplazar" href="#lugar">Nosotros</a>
+                    </li>
+                <li title="Concatanos" >
+                    <img  class="patita" src="./public/pawprint 4.png" alt="patita">
+                    <a  class="responsive desplazar" href="#contacto">Contactanos</a>
+                </li>
+            </ul>
+        
+            <span class="btn__menu">
+                <i class="fa fa-bars"></i>
+            </span>
+        </nav>  
+    </header>
+    <body>
+        <section id="Pets">
+            <div class="container">
+                <img class="container_img" src="./public/fondo.png" alt="Fondo body">
+                <div class="container__text">
+                    <h1>¡Es un placer tenerte aquí!</h1>
+                    <h2>¡Comedores en descuento!</h2>
+                    <a target="_blank" href="#Categorias">
+                        <button class="container__btn" >comederos</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="Categorias">
+            <div class="productos">
+                <img class="productos__patita" src="./public/patita.svg" alt="Patita">
+                <h2>Productos Destacados</h2>
+                <div class="productos__texto">
+                    <p>Comederos</p>
+                    <p>-</p>
+                    <p>Accesorios</p>
+                    <p>-</p>
+                    <p>Comida</p>
+                </div>
+                <div class="productos__img">
+                    <div class="productos__flex">
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./public/churrasquito.png" alt="">
+                            </div>
+                            <div class="card__text">
+                                <p>Juguete Churrasquito</p>
+                                <p class="card__text--yellow">$150</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./public/churrasquito.png" alt="">
+                            </div>
+                            <div class="card__text">
+                                <p>Comedero para perro</p>
+                                <p class="card__text--yellow">$250</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./public/churrasquito.png" alt="">
+                            </div>
+                            <div class="card__text">
+                                <p>Juguete Huesito</p>
+                                <p class="card__text--yellow">$650</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section  id="contacto" >
+                <h2 class="form__title">Contáctonos</h2>
+
+                        <form class="form" >
+                            <div class="form__container">
+                                <input class="form__input" name="name" type="text" placeholder="Nombre y Apellido" required>
+                                <input class="form__input" name="email" type="email" placeholder="Ingresá tu correo electrónico" required>
+                                <input class="form__input" name="phone" type="number" placeholder="Teléfono" required>
+                                <div class="form__button">
+                                    <button class="form__btn--reset" type="submit">Resetear</button>
+                                    <button class="form__btn--enviar" type="submit">Enviar</button>
+                                </div>
+                                
+                            </div>
+                        </form>
+        </section>
+    </body>
+    <footer id="lugar">
+        <div class="suscribe">
+            <div class="suscribe__text">
+                <img src="./public/correo.png" alt="Correo">
+                <p>Suscribete para más novedades</p>
+            </div>
+            <div class="suscribe__form">
+                <form >
+                    <input class="suscribe__input" name="email" type="email" placeholder="Ingresá tu correo electronico" required>
+                    <button class="suscribe__button" type="submit">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+        <div class="lugar">
+            <div class="lugar__info">
+                <div class="lugar__icons">
+                    <h2>Localidad</h2>
+                    <img class="lugar__icons--location" src="./public/Location.png" alt="Locacion">
+                </div>
+                <div class="lugar__icons">
+                    <h2>Teléfono</h2>
+                    <img class="lugar__icons--phone" src="./public/Phone.png" alt="Telefono">
+                </div>
+                <div class="lugar__icons">
+                    <h2>Correo Electrónico</h2>
+                    <img class="lugar__icons--correo" src="./public/Correo_icon.png" alt="Correo">
+                </div>
+            </div>
+            <div class="lugar__icon">
+                <img src="./public/logo_footer.svg" alt="">
+            </div>
+
+        </div>
+    </footer>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
