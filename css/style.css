@@ -1,7 +1,4 @@
-
 @import url(/imports/app.css);
-
-
 
 header{
     background: #F0A83E;
@@ -400,7 +397,6 @@ ul.show{
     .suscribe__input{
         width: 250px;
     }
-    
 }
 
 
@@ -445,6 +441,10 @@ ul.show{
     }
     .suscribe__button{
         margin: 0;
+    }
+    .lugar{
+        flex-direction: column-reverse;
+        padding-top: 1rem;
     }
 }
 
